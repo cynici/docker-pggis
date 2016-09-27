@@ -5,9 +5,9 @@ Presentation
 ------------
 
 This Docker image is a container with all latest PostgreSQL extensions needed to do serious GIS work.
-It is based on Ubuntu 14.04 and features :
+It is based on the latest [phusion/baseimage](https://github.com/phusion/baseimage-docker) and features :
 
-* PostgreSQL 9.5 (from PGDG packages)
+* PostgreSQL 9.5 and PL/R (from PGDG packages)
 * PostGIS 2.2 (compiled from release sources) with SFCGAL support (git master) and GEOS 3.5
 * PgRouting (git master)
 * PostgreSQL PointCloud extension (git master)
@@ -22,7 +22,7 @@ This Docker is aimed at tests and development. Do not use it for production purp
 Just get me started !
 ---------------------
 
-Make sure you have docker installed. On Ubuntu 14.04, Docker is named *docker.io*, replace the *docker* by *docker.io* in the following if needed. It is advised to use the latest available Docker version from official packages. See : https://blog.docker.com/2015/07/new-apt-and-yum-repos/
+Make sure you have a recent version of [docker](https://docs.docker.com/engine/installation/) installed. Optionally, get [docker-compose](https://docs.docker.com/compose/install/) to make your life even easier!
 
 If you just want to run a container with this image, you do not need this repository as the image is available on docker hub as a Trusted Build.
 Just run the container and it will download the image if you do not already have it locally :
